@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "required": false,
+    "javaType": "com.synchrony.dataworks.dto.services.Wrapper",
+    "additionalProperties": false,
+    "properties": {
+        "recentActivityResponse": {
+            "type": "object",
+            "required": false,
+            "javaType": "com.synchrony.dataworks.dto.services.ActivityResponse",
+            "extendsJavaClass": "com.synchrony.dataworks.common.dto.services.OutHeaderSupport",
+            "additionalProperties": false,
+            "properties": {
+                "recentActivity": {
+                    "required": true,
+                    "type": "array",
+                    "items": {
+                        "required": true,
+                        "$ref": "entities/dataworks.json#/definitions/recentActivity"
+                    }
+                }
+            }
+        },
+         "employeeResponse": {
+            "type": "object",
+            "required": false,
+            "javaType": "com.synchrony.dataworks.dto.services.EmployeeResponse",
+            "additionalProperties": false,
+            "properties": {
+                "employee": {
+                    "required": true,
+                    "type": "array",
+                    "items": {
+                        "required": true,
+                        "$ref": "entities/employee.json#/definitions/employee"
+                    }
+                    },
+                   "status": {
+                   "type" : "string"
+                   
+                   },
+                   "message": {
+                     "type": "string"
+                   }
+                }
+            }
+        
+      
+    }
+}

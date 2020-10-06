@@ -1,0 +1,33 @@
+{
+    "definitions": {
+        "employee": {
+            "javaType": "com.synchrony.dataworks.dto.Employee",
+            "type": "object",
+            "required": false,
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                 },
+                "employee_name": {
+                    "type": "string"
+                   
+                },
+                "employee_salary": {
+                    "type": "integer"
+                 
+                },
+                "employee_age": {
+                    "type": "integer"
+                
+                },
+                "profile_image": {
+                    "type": "integer"
+                
+                }
+            }
+        }
+    
+              
+    }
+}

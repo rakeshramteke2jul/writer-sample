@@ -1,0 +1,39 @@
+{
+    "definitions": {
+        "recentActivity": {
+            "javaType": "com.synchrony.dataworks.dto.RecentActivity",
+            "type": "object",
+            "required": true,
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "description": "Recent activity identification id."
+                },
+                "merchantId": {
+                    "type": "integer",
+                    "description": "Marchant Id associated with recent activity."
+                },
+                "status": {
+                    "type": "string",
+                    "description": "The stop code's identification's id."
+                },
+                "description": {
+                    "type": "string",
+                    "description": "The stop code's status."
+                },
+                "source": {
+                    "type": "string",
+                    "description": "The stop code's status."
+                },
+                  "createdAt": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The stop code's status."
+                }
+            }
+        }
+    
+              
+    }
+}
